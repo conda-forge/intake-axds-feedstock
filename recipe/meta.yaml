@@ -1,5 +1,5 @@
 {% set name = "intake-axds" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/intake_axds-{{ version }}.tar.gz
-  sha256: 51d075a82d1e5d0213c9b6df19688df2dcbb4223ac57a1e915de3001a2c455c4
+  sha256: 76a6496269c8981b8ae4afba0a3502502624c671343d98f5a73d333435a19829
 
 build:
   noarch: python
