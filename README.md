@@ -1,11 +1,11 @@
-About intake-axds
-=================
+About intake-axds-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/intake-axds-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/axiom-data-science/intake-axds
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/intake-axds-feedstock/blob/main/LICENSE.txt)
 
 Summary: Intake interface to Axiom assets
 

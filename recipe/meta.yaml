@@ -1,5 +1,5 @@
 {% set name = "intake-axds" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/intake_axds-{{ version }}.tar.gz
-  sha256: f7091f9809e9f154583924ab1631f3429eb85006912d07d94ea2eaccc0ccfe4d
+  sha256: fa6bfaac26e30d291c3599c94c8b84f1fe49ec03598e9b86c2a6df4c06da352a
 
 build:
   noarch: python
@@ -24,6 +24,7 @@ requirements:
     - intake
     - intake-parquet
     - intake-xarray
+    - nested_lookup
     - pandas
     - python >=3.6
     - requests
