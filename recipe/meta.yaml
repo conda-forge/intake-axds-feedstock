@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/intake_axds-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/intake_axds-{{ version }}.tar.gz
   sha256: fa6bfaac26e30d291c3599c94c8b84f1fe49ec03598e9b86c2a6df4c06da352a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools-scm
   run:
     - cf_pandas
@@ -26,7 +26,7 @@ requirements:
     - intake-xarray
     - nested_lookup
     - pandas
-    - python >=3.6
+    - python >={{ python_min }}
     - requests
     - shapely
 
@@ -37,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/axiom-data-science/intake-axds
